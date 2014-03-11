@@ -15,6 +15,7 @@ clist.o: clist.c clist.h
 chtbl.o: chtbl.c chtbl.h
 hashpjw.o: hashpjw.c hashpjw.h
 ohtbl.o: ohtbl.c ohtbl.h
+stack.o: stack.c stack.h
 
 cds: list.o dlist.o clist.o chtbl.o hashpjw.o ohtbl.o
 	$(CC) $(PRGNAME).c -o $(PRGNAME)  $(CFLAGS) $(DEBUG) $(OBJECTS)
