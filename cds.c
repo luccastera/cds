@@ -7,6 +7,7 @@
 #include "chtbl.h"
 #include "ohtbl.h"
 #include "stack.h"
+#include "queue.h"
 
 int main() {
   printf("Hello from cds\n");

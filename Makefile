@@ -16,8 +16,9 @@ chtbl.o: chtbl.c chtbl.h
 hashpjw.o: hashpjw.c hashpjw.h
 ohtbl.o: ohtbl.c ohtbl.h
 stack.o: stack.c stack.h
+queue.o: queue.c queue.h
 
-cds: list.o dlist.o clist.o chtbl.o hashpjw.o ohtbl.o
+cds: list.o dlist.o clist.o chtbl.o hashpjw.o ohtbl.o stack.o queue.o
 	$(CC) $(PRGNAME).c -o $(PRGNAME)  $(CFLAGS) $(DEBUG) $(OBJECTS)
 
 clean:
